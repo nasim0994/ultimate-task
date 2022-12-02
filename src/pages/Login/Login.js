@@ -32,9 +32,9 @@ const Login = () => {
       });
   };
   return (
-    <div className="flex py-4 px-4">
+    <div className="lg:flex py-4 px-4">
       {/* Left Content */}
-      <div className="w-[60%]">
+      <div className="lg:w-[60%]">
         <div className="pt-[62px] pl-[56px]">
           <img src={logo} alt="" />
         </div>
@@ -45,7 +45,7 @@ const Login = () => {
 
       {/* Login Form */}
       <div
-        className="w-[40%] h-[630px]"
+        className="lg:w-[40%] h-[630px]"
         style={{
           boxShadow:
             "1px -10px 25px rgba(201, 201, 201, 0.25), -1px 10px 25px rgba(147, 147, 147, 0.25)",

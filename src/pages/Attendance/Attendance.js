@@ -13,6 +13,7 @@ const Attendance = () => {
       }).then((res) => res.json()),
   });
 
+  // I don't know where you used the token, I didn't get that data. I tried fetching tokens from local storage as the demo but didn't get any data so created demo data.
   const demoEmployeesData = [
     {
       date: "01/12/2022",
@@ -37,13 +38,13 @@ const Attendance = () => {
   ];
 
   return (
-    <div className="pl-14 pt-12">
+    <div className="lg:pl-14 pt-12">
       <header>
         <img src={logo} alt="" />
       </header>
 
       <div className="pt-3">
-        <h2 className="bg-[#1678CB] w-[440px] h-[72px] mx-auto flex items-center justify-center text-white text-3xl font-semibold rounded-md">
+        <h2 className="bg-[#1678CB] w-[340px] lg:w-[440px] h-[72px] mx-auto flex items-center justify-center text-white text-xl lg:text-3xl font-semibold rounded-md">
           Attendance information
         </h2>
 
