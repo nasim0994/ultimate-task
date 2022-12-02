@@ -36,12 +36,20 @@ const Signup = () => {
       return alert("password must be 8 character");
     }
 
+    const newUser = {
+      first_name: formData.first_name,
+      last_Name: formData.last_Name,
+      phone: formData.numberCode + formData.phone_number,
+      email: formData.email,
+      password: formData.password,
+    };
+
     fetch("https://test.nexisltd.com/signup", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(newUser),
     })
       .then((res) => res.json())
       .then((data) => {
