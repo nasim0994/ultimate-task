@@ -18,7 +18,7 @@ const Login = () => {
     }
     const user = { email, password };
 
-    fetch("https://test.nexisltd.com/users/login", {
+    fetch("https://test.nexisltd.com/login", {
       method: "POST",
       headers: {
         "content-type": "application/json",
